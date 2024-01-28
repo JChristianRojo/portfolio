@@ -1,0 +1,84 @@
+.hero{
+    margin-top: 80px;
+}
+
+.hero .row{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.hero h1{
+    color: white;
+    line-height: 1.1;
+    letter-spacing: 0.1em;
+    max-width: 750px;
+    margin-inline: auto;
+}
+
+.hero span{
+    color: #B99A45;
+    font-weight: 900;
+}
+
+.hero .myPicture {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    width: 300px;
+    display: flex;
+    margin-inline: auto;
+    box-shadow: 5px 5px 10px 10px #1A1A1A;
+}
+
+.hero .imageContainer {
+    position: relative;
+}
+
+.hero .socialsImage{
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(58%) sepia(35%) saturate(638%) hue-rotate(6deg) brightness(99%) contrast(90%);
+}
+
+.hero .mainButton{
+    margin-right: 5%;
+}
+
+.hero .linksContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.hero .sectionHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width:1024px) {
+    .hero h1{
+        font-size: 30px;
+        max-width: auto;
+    }    
+
+    .hero .row{
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .hero .row > * {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .hero .sectionHead{
+        align-items: start;
+    }
+}

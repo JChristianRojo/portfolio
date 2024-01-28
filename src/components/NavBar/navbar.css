@@ -1,0 +1,73 @@
+.navbar{
+    background: #1A1A1A;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar a{
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.navbar a:hover{
+    color: #B99A45;
+}
+
+.navbar a.mainButton:hover{
+    color: inherit;
+}
+
+.navbar .row {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.navbar .desktopMenu{
+    display: none;
+    gap:  10px;
+}
+
+.navbar .hamburgerMenu{
+    display: block;
+    width: 30px;
+    margin-block: auto;
+}
+
+.navbar .logo{
+    cursor: pointer;
+    max-width: 130px;
+    max-height: fit-content;
+    margin-block: auto;
+}
+
+.navbar .socialsImage{
+    width: 18px;
+    filter: brightness(0) invert(1);    
+}
+
+@media (min-width: 768px) {
+    .navbar .logo{
+        max-width: 200px;
+        max-height: fit-content;
+        margin-block: auto;
+    }
+
+    .navbar .desktopMenu{
+        display: flex;
+    }    
+    
+    .navbar .desktopMenu .desktopMenuListItem{
+        padding: 10px 18px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }    
+
+    .navbar .hamburgerMenu{
+        display: none;
+        width: 50px;
+    }
+}

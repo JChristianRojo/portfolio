@@ -1,0 +1,52 @@
+.contact {
+    background: #1A1A1A;
+    text-align: center;
+}
+
+.contact .socialsImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact .socialsImage{
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(58%) sepia(35%) saturate(638%) hue-rotate(6deg) brightness(99%) contrast(90%);
+}
+
+.contact .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #C7AE6A;
+    border-radius: 40px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 5px 5px 10px #C7AE6A;
+    position: relative;
+}
+
+.contact a{
+    color: #C7AE6A;
+}
+
+.contact .row{
+    max-width: 800px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .contact .row{
+        flex-direction: row;
+        align-items: center;
+        margin-inline: auto;
+        justify-content: space-between;
+    }
+}

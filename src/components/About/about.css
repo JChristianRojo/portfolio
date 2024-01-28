@@ -1,0 +1,64 @@
+.about{
+    background: #1A1A1A;
+}
+
+.about .sectionHead{
+    margin-bottom: 30px;
+    max-width: 850px;
+    margin-inline: auto;
+}
+
+.about .sectionHead p:not(:last-child){
+    margin-bottom: 14px;
+}
+
+.about h2{
+    margin-bottom: 20px;
+}
+
+.about .row {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about .row .card{
+    background: #2F2F2F;
+    color: #D5C28F;
+    padding: 40px 20px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.about .row .card h4{
+    color: #E3D6B4;
+}
+
+.about .skill{
+    width: 100px;
+    filter: brightness(0) saturate(100%) invert(58%) sepia(35%) saturate(638%) hue-rotate(6deg) brightness(99%) contrast(90%);
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.about h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width:768px) {
+    .about .row .card {
+        max-width: 44%;
+    }
+}
+
+@media (min-width:1024px) {
+    .about h2{
+        margin-bottom: 30px;
+    }
+
+    .about .row .card {
+        max-width: 22%;
+    }
+}
