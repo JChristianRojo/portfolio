@@ -44,6 +44,7 @@
 
 .hero .mainButton{
     margin-right: 5%;
+    margin-block: unset;
 }
 
 .hero .linksContainer{
