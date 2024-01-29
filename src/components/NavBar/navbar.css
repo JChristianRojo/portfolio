@@ -49,7 +49,6 @@
 }
 
 .navbar .navMenu{
-    gap: 10px;
     position: absolute;
     top: 80px;
     flex-direction: column;
@@ -58,11 +57,11 @@
     background: #1A1A1A;
     overflow: hidden;
     transition: 0.6s;
+    gap: unset;
 }
 
 .navbar .navMenu.active{
     height: 118px;
-    gap: unset;
 }
 
 .navbar .navMenuListItem{
@@ -82,6 +81,7 @@
         position: unset;
         height: 100%;
         max-height: 100%;
+        gap: 10px;
     }    
     
     .navbar .navMenu .navMenuListItem{
