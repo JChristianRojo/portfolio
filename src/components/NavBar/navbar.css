@@ -48,6 +48,27 @@
     filter: brightness(0) invert(1);    
 }
 
+.navbar .navMenu{
+    gap: 10px;
+    position: absolute;
+    top: 80px;
+    flex-direction: column;
+    display: flex;
+    height: 0;
+    background: #1A1A1A;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.navbar .navMenu.active{
+    height: 118px;
+    gap: unset;
+}
+
+.navbar .navMenuListItem{
+    padding: 20px;
+}
+
 @media (min-width: 768px) {
     .navbar .logo{
         max-width: 200px;
@@ -55,12 +76,15 @@
         margin-block: auto;
     }
 
-    .navbar .desktopMenu{
+    .navbar .navMenu{
         display: flex;
+        flex-direction: row;
+        position: unset;
+        height: 100%;
+        max-height: 100%;
     }    
     
-    .navbar .desktopMenu .desktopMenuListItem{
-        padding: 10px 18px;
+    .navbar .navMenu .navMenuListItem{
         height: 100%;
         display: flex;
         align-items: center;
