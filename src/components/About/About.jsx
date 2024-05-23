@@ -32,7 +32,7 @@ export default function About() {
                 <div className="sectionHead">
                     <h2>About Me</h2>
                     <p>
-                        I possess 9 months of experience as a web developer and I am extremely passionate for programming. I earned a Bachelor of Science degree in Computer Engineering in the academic year 2022. My educational journey includes 6 years as a dedicated student athlete, followed by a 3-year commitment as a student leader.
+                        I possess a year of experience as a web developer and I am extremely passionate for programming. I earned a Bachelor of Science degree in Computer Engineering in the academic year 2022. My educational journey includes 6 years as a dedicated student athlete, followed by a 3-year commitment as a student leader.
                     </p>
                     <p>
                         Aside from my professional career and education, my hobbies include watching series and movies and as well as playing online games.
