@@ -73,6 +73,7 @@
         flex-direction: row-reverse;
         text-align: left;
         max-width: 85%;
+        margin: auto;
     }
 
     .hero .row>* {
