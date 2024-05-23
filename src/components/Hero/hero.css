@@ -84,4 +84,8 @@
     .hero .sectionHead {
         align-items: start;
     }
+
+    .hero .myPicture {
+        margin-left: auto;
+    }
 }
