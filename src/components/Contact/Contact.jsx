@@ -13,7 +13,7 @@ function Contact() {
                         <h2>Get in Touch</h2>
                         <div className="socialsImages">
                             <a href="https://www.facebook.com/10Chinchan"><img className='socialsImage facebook' src={Facebook} alt="Facebook Icon" /></a>
-                            <a href="www.linkedin.com/in/john-christian-rojo-005b301ab"><img className='socialsImage linkedIn' src={LinkedIn} alt="LinkedIn Icon" /></a>
+                            <a href="https://www.linkedin.com/in/john-christian-rojo-005b301ab"><img className='socialsImage linkedIn' src={LinkedIn} alt="LinkedIn Icon" /></a>
                         </div>
                     </div>
                     <div className="card">
