@@ -1,15 +1,15 @@
-.hero{
+.hero {
     margin-top: 80px;
 }
 
-.hero .row{
+.hero .row {
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: center;
 }
 
-.hero h1{
+.hero h1 {
     color: white;
     line-height: 1.1;
     letter-spacing: 0.1em;
@@ -17,7 +17,7 @@
     margin-inline: auto;
 }
 
-.hero span{
+.hero span {
     color: #B99A45;
     font-weight: 900;
 }
@@ -37,17 +37,17 @@
     position: relative;
 }
 
-.hero .socialsImage{
+.hero .socialsImage {
     width: 40px;
     filter: brightness(0) saturate(100%) invert(58%) sepia(35%) saturate(638%) hue-rotate(6deg) brightness(99%) contrast(90%);
 }
 
-.hero .mainButton{
+.hero .mainButton {
     margin-right: 5%;
     margin-block: unset;
 }
 
-.hero .linksContainer{
+.hero .linksContainer {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -55,7 +55,7 @@
     justify-content: center;
 }
 
-.hero .sectionHead{
+.hero .sectionHead {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,22 +64,23 @@
 }
 
 @media (min-width:1024px) {
-    .hero h1{
+    .hero h1 {
         font-size: 30px;
         max-width: auto;
-    }    
-
-    .hero .row{
-        flex-direction: row-reverse;
-        text-align: left;
     }
 
-    .hero .row > * {
+    .hero .row {
+        flex-direction: row-reverse;
+        text-align: left;
+        max-width: 85%;
+    }
+
+    .hero .row>* {
         max-width: 50%;
         width: 100%;
     }
 
-    .hero .sectionHead{
+    .hero .sectionHead {
         align-items: start;
     }
 }
