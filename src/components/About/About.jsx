@@ -27,27 +27,42 @@ const skillsData = [
 
 export default function About() {
     return (
-        <section className='about' id='about'>
-            <div className="container">
-                <div className="sectionHead">
-                    <h2>About Me</h2>
-                    <p>
-                        I possess a year of experience as a web developer and I am extremely passionate for programming. I earned a Bachelor of Science degree in Computer Engineering in the academic year 2022. My educational journey includes 6 years as a dedicated student athlete, followed by a 3-year commitment as a student leader.
-                    </p>
-                    <p>
-                        Aside from my professional career and education, my hobbies include watching series and movies and as well as playing online games.
-                    </p>
+<section className="about" id="about">
+    <div className="container">
+        <div className="sectionHead">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Software Developer with over a year of experience in web development. My expertise lies in creating user-friendly and visually engaging web solutions using modern frameworks and technologies. I earned my Bachelor of Science degree in Computer Engineering in 2022 and have since honed my skills across various roles in the tech industry.
+            </p>
+            <p>
+                My professional journey includes:
+            </p>
+            <ul>
+                <li>
+                    <strong>Software Developer (Odysse | June 2024 – Present):</strong> Collaborating with UI/UX designers to develop scalable web applications, optimizing website performance, and creating custom WordPress themes and plugins.
+                </li>
+                <li>
+                    <strong>Web Developer (SEO Hacker | Apr. 2023 – Dec. 2023):</strong> Delivered functional websites using various page builders like WordPress, Shopify, and Squarespace, while ensuring SEO optimization in collaboration with specialists.
+                </li>
+                <li>
+                    <strong>Front End Developer (Fortress | Dec. 2023 – Present):</strong> Enhanced WordPress themes for optimized visuals and functionality, improving responsiveness and layout for better user experiences.
+                </li>
+            </ul>
+            <p>
+                Outside of work, I enjoy watching series and movies, playing online games, and continuously exploring new tools and technologies to advance my skills.
+            </p>
+        </div>
+        <div className="row slide-in-top">
+            <h3>My Skills</h3>
+            {skillsData.map((skill, index) => (
+                <div className="card" key={index}>
+                    <img className="skill" src={skill.image} alt={skill.name} />
+                    <h4>{skill.name}</h4>
                 </div>
-                <div className="row slide-in-top">
-                <h3>My Skills</h3>
-                    {skillsData.map((skill, index) => (
-                        <div className="card" key={index}>
-                            <img className='skill' src={skill.image} alt={skill.name} />
-                            <h4>{skill.name}</h4>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+            ))}
+        </div>
+    </div>
+</section>
+
     );
 }

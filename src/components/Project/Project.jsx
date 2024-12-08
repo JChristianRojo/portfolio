@@ -122,6 +122,10 @@ export default function Project() {
             {
             projectCard(PrefabHouse, "Prefab House", "card", ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "Wordpress"], "http://prefabhouse.ph/")
         }
+        
+        {
+            projectCard(Odysse, "Odysse", "card", ["Wordpress", "HTML", "CSS", "JavaScript", "PHP"], "https://odysse.io/")
+        }
 
             {
             projectCard(BacopaMonnieri, "Bacopa Monnieri", "card", ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "Wordpress", "WooCommerce"], "https://bacopamonnieri.ph/")
@@ -133,9 +137,6 @@ export default function Project() {
 
             {
             projectCard(Serra, "Sierra", "card", ["JavaScript", "React", "Tailwind CSS", "Next JS"])
-        }
-            {
-            projectCard(Odysse, "Odysse", "card", ["Wordpress", "HTML", "CSS", "JavaScript", "PHP"], "https://odysse.io/")
         }
 
         </Slider> <Slider {
@@ -151,6 +152,10 @@ export default function Project() {
         }
 
             {
+            projectCard(Odysse, "Odysse", "cardNav")
+        }
+
+            {
             projectCard(BacopaMonnieri, "Bacopa Monnieri", "cardNav")
         }
 
@@ -160,10 +165,6 @@ export default function Project() {
 
             {
             projectCard(Serra, "Sierra", "cardNav")
-        }
-
-            {
-            projectCard(Odysse, "Odysse", "cardNav")
         }
 
         </Slider> </div> </section>)
