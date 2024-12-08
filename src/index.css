@@ -95,7 +95,7 @@ section {
 
 @keyframes slide-in-top {
   0% {
-    transform: translateY(100%);
+    transform: translateY(10%);
     opacity: 0;
   }
 
