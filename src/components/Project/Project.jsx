@@ -135,7 +135,7 @@ export default function Project() {
             projectCard(Serra, "Sierra", "card", ["JavaScript", "React", "Tailwind CSS", "Next JS"])
         }
             {
-            projectCard(Odysse, "Odysse", "card", ["Wordpress", "HTML", "CSS", "JavaScript", "PHP"])
+            projectCard(Odysse, "Odysse", "card", ["Wordpress", "HTML", "CSS", "JavaScript", "PHP"], "https://odysse.io/")
         }
 
         </Slider> <Slider {
