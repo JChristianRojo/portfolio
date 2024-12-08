@@ -31,7 +31,7 @@ export default function About() {
     <div className="container">
         <div className="sectionHead">
         <h2>About Me</h2>
-        
+
         <p>
             I am a passionate <strong>Software Developer</strong> with over a year of experience in web development, specializing in creating <strong>user-friendly</strong> and <strong>visually engaging web solutions</strong>. Throughout my career, I have collaborated with <strong>UI/UX designers</strong> to develop <strong>scalable applications</strong>, enhance website performance, and build <strong>custom WordPress themes and plugins</strong>. My expertise spans various platforms, including <strong>WordPress</strong>, <strong>Shopify</strong>, and <strong>Squarespace</strong>, with a strong emphasis on <strong>SEO optimization</strong> and <strong>responsive design</strong>. I have also developed <strong>WordPress plugins</strong> to deliver tailored functionality. My work primarily focuses on <strong>creating WordPress themes from scratch</strong>, ensuring they are both user-friendly and aligned with <strong>modern frameworks</strong> and <strong>advanced technologies</strong> to elevate user experiences.
         </p>
@@ -40,14 +40,16 @@ export default function About() {
         </p>
 
         </div>
-        <h3>My Skills</h3>
-        <div className="row slide-in-top">
-            {skillsData.map((skill, index) => (
-                <div className="card" key={index}>
-                    <img className="skill" src={skill.image} alt={skill.name} />
-                    <h4>{skill.name}</h4>
-                </div>
-            ))}
+        <div className="slide-in-top">
+            <h3>My Skills</h3>
+            <div className="row">
+                {skillsData.map((skill, index) => (
+                    <div className="card" key={index}>
+                        <img className="skill" src={skill.image} alt={skill.name} />
+                        <h4>{skill.name}</h4>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
 </section>
