@@ -52,15 +52,15 @@ ul.no-bullets {
 
 section {
   padding: 70px 0;
-  animation: slide-in-top;
-  animation-timeline: view();
-  animation-range: entry cover 40%;
 }
 
 .container {
   height: 100%;
   max-width: 85%;
   margin-inline: auto;
+  animation: slide-in-top;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
 }
 
 .row {
