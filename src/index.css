@@ -52,7 +52,7 @@ ul.no-bullets {
 
 section {
   padding: 70px 0;
-  animation: slide-in-top-custom;
+  animation: slide-in-top;
   animation-timeline: view();
   animation-range: entry cover 40%;
 }
