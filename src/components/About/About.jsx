@@ -29,7 +29,7 @@ export default function About() {
     return (
         <section className='about' id='about'>
             <div className="container">
-                <div className="sectionHead">
+                <div className="sectionHead slide-in-top">
                     <h2>About Me</h2>
                     <p>
                         I possess a year of experience as a web developer and I am extremely passionate for programming. I earned a Bachelor of Science degree in Computer Engineering in the academic year 2022. My educational journey includes 6 years as a dedicated student athlete, followed by a 3-year commitment as a student leader.
@@ -38,8 +38,8 @@ export default function About() {
                         Aside from my professional career and education, my hobbies include watching series and movies and as well as playing online games.
                     </p>
                 </div>
+                <div className="row slide-in-top">
                 <h3>My Skills</h3>
-                <div className="row">
                     {skillsData.map((skill, index) => (
                         <div className="card" key={index}>
                             <img className='skill' src={skill.image} alt={skill.name} />

@@ -58,9 +58,6 @@ section {
   height: 100%;
   max-width: 85%;
   margin-inline: auto;
-  animation: slide-in-top;
-  animation-timeline: view();
-  animation-range: entry cover 40%;
 }
 
 .row {
@@ -88,6 +85,12 @@ section {
   color: white;
   background: transparent;
   border: 1px solid #B99A45;
+}
+
+.slide-in-top {
+  animation: slide-in-top;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
 }
 
 @keyframes slide-in-top {
