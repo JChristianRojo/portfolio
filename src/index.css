@@ -99,11 +99,8 @@ section {
     opacity: 0;
   }
 
-  50% {
-    opacity: 1;
-  }
-
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }

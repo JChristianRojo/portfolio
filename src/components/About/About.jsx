@@ -29,7 +29,7 @@ export default function About() {
     return (
         <section className='about' id='about'>
             <div className="container">
-                <div className="sectionHead slide-in-top">
+                <div className="sectionHead">
                     <h2>About Me</h2>
                     <p>
                         I possess a year of experience as a web developer and I am extremely passionate for programming. I earned a Bachelor of Science degree in Computer Engineering in the academic year 2022. My educational journey includes 6 years as a dedicated student athlete, followed by a 3-year commitment as a student leader.

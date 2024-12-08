@@ -13,6 +13,7 @@ import PrefabHouse from '../../assets/Project/PrefabHouse.jpeg';
 import BacopaMonnieri from '../../assets/Project/BacopaMonnieri.jpeg';
 import TheKinHouse from '../../assets/Project/TheKinHouse.jpeg';
 import Serra from '../../assets/Project/Serra.jpeg';
+import Odysse from '../../assets/Project/Odysse.jpg';
 
 export default function Project() {
     const [nav1,
@@ -133,6 +134,9 @@ export default function Project() {
             {
             projectCard(Serra, "Sierra", "card", ["JavaScript", "React", "Tailwind CSS", "Next JS"])
         }
+            {
+            projectCard(Odysse, "Odysse", "card", ["Wordpress", "HTML", "CSS", "JavaScript", "PHP"])
+        }
 
         </Slider> <Slider {
             ...settings2
@@ -156,6 +160,10 @@ export default function Project() {
 
             {
             projectCard(Serra, "Sierra", "cardNav")
+        }
+
+            {
+            projectCard(Odysse, "Odysse", "cardNav")
         }
 
         </Slider> </div> </section>)
