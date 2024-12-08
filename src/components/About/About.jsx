@@ -30,30 +30,18 @@ export default function About() {
 <section className="about" id="about">
     <div className="container">
         <div className="sectionHead">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate Software Developer with over a year of experience in web development. My expertise lies in creating user-friendly and visually engaging web solutions using modern frameworks and technologies. I earned my Bachelor of Science degree in Computer Engineering in 2022 and have since honed my skills across various roles in the tech industry.
-            </p>
-            <p>
-                My professional journey includes:
-            </p>
-            <ul>
-                <li>
-                    <strong>Software Developer (Odysse | June 2024 – Present):</strong> Collaborating with UI/UX designers to develop scalable web applications, optimizing website performance, and creating custom WordPress themes and plugins.
-                </li>
-                <li>
-                    <strong>Web Developer (SEO Hacker | Apr. 2023 – Dec. 2023):</strong> Delivered functional websites using various page builders like WordPress, Shopify, and Squarespace, while ensuring SEO optimization in collaboration with specialists.
-                </li>
-                <li>
-                    <strong>Front End Developer (Fortress | Dec. 2023 – Present):</strong> Enhanced WordPress themes for optimized visuals and functionality, improving responsiveness and layout for better user experiences.
-                </li>
-            </ul>
-            <p>
-                Outside of work, I enjoy watching series and movies, playing online games, and continuously exploring new tools and technologies to advance my skills.
-            </p>
+        <h2>About Me</h2>
+        
+        <p>
+            I am a passionate <strong>Software Developer</strong> with over a year of experience in web development, specializing in creating <strong>user-friendly</strong> and <strong>visually engaging web solutions</strong>. Throughout my career, I have collaborated with <strong>UI/UX designers</strong> to develop <strong>scalable applications</strong>, enhance website performance, and build <strong>custom WordPress themes and plugins</strong>. My expertise spans various platforms, including <strong>WordPress</strong>, <strong>Shopify</strong>, and <strong>Squarespace</strong>, with a strong emphasis on <strong>SEO optimization</strong> and <strong>responsive design</strong>. I have also developed <strong>WordPress plugins</strong> to deliver tailored functionality. My work primarily focuses on <strong>creating WordPress themes from scratch</strong>, ensuring they are both user-friendly and aligned with <strong>modern frameworks</strong> and <strong>advanced technologies</strong> to elevate user experiences.
+        </p>
+        <p>
+            I earned a <strong>Bachelor of Science degree in Computer Engineering</strong> in 2022, balancing my academic journey with <strong>six years as a dedicated student-athlete</strong> and <strong>three years as a student leader</strong>. Beyond my professional pursuits, I enjoy watching <strong>series and movies</strong> and playing <strong>online games</strong>, which fuel my creativity and problem-solving mindset.
+        </p>
+
         </div>
+        <h3>My Skills</h3>
         <div className="row slide-in-top">
-            <h3>My Skills</h3>
             {skillsData.map((skill, index) => (
                 <div className="card" key={index}>
                     <img className="skill" src={skill.image} alt={skill.name} />
