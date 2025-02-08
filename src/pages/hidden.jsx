@@ -1,3 +1,4 @@
+import bg from "../assets/valentines-bg.svg";
 import { useState } from "react";
 
 function Hidden() {
@@ -11,7 +12,7 @@ function Hidden() {
           body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url("./src/assets/valentines-bg.svg") no-repeat center center fixed;
+            background: url(${bg}) no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;
