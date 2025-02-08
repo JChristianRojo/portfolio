@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import Hidden from "./pages/hidden";
+import Home from "./pages/Home";
+import Hidden from "./pages/Hidden";
 import Navbar from "./components/NavBar/Navbar";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/newpage" element={<Hidden />} />
+        <Route path="/Hidden" element={<Hidden />} />
       </Routes>
     </>
   );
