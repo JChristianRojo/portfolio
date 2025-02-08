@@ -1,4 +1,4 @@
-import bg from "../assets/valentines-bg.svg";
+import bg from "/assets/valentines-bg.svg";
 import { useState } from "react";
 
 function Hidden() {
