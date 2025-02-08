@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Hidden from "./pages/Hidden";
-import Navbar from "./components/NavBar/Navbar";
 
 function App() {
   return (
