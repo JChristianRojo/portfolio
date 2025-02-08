@@ -3,11 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Ensures correct asset paths
-  server: {
-    historyApiFallback: true, // Allows SPA routing in local dev
-  },
+  base: './', // Ensure correct asset paths
   build: {
-    outDir: 'dist', // Ensures correct build output
+    outDir: 'dist',
   }
 });
