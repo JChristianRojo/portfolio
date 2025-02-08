@@ -6,10 +6,9 @@ import Navbar from "./components/NavBar/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Hidden" element={<Hidden />} />
+        <Route path="/hidden" element={<Hidden />} />
       </Routes>
     </>
   );
