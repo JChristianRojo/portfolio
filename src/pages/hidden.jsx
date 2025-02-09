@@ -92,6 +92,9 @@ function Hidden() {
             font-weight: bold;
             color: #ff416c;
           }
+          .mb-1 {
+          margin-bottom: 8px;
+          }
         `}
       </style>
 
@@ -101,10 +104,15 @@ function Hidden() {
             <div>
               <h1>My Valentine’s Message 💌</h1>
               <p className="message">
+              <p className="mb-1">
                 From the moment I met you, my world became brighter.
                 Your smile warms my heart, and your kindness inspires me every day.
                 On this special day, I just want you to know how much you mean to me.
-                Will you make my Valentine’s Day even more special? ❤️
+              </p>
+
+<p className="mb-1">Will you make my Valentine’s Day even more special? ❤️</p>
+
+<p className="mb-1">Hindi man kita ma-spoil sa ngayon sa lahat ng gusto mo, pero gagawa at gagawa ako ng paraan para lang mapasaya ka, ngayon at sa mga darating pang araw. 💖</p>
               </p>
               <button className="btn" onClick={() => setShowQuestion(true)}>
                 Continue 💕
