@@ -37,6 +37,7 @@ function GirlfriendsDay() {
   ];
 
   const isLastPage = page === pages.length - 1;
+  const colors = ['#ff5e8e', '#f06292', '#f48fb1', '#ec407a', '#f8bbd0'];
 
   return (
     <>
@@ -48,17 +49,9 @@ function GirlfriendsDay() {
         }
 
         body {
-          margin: 0;
           background: url(${bg}) no-repeat center center fixed;
           background-size: cover;
           font-family: 'Poppins', sans-serif;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-        }
-
-        #root {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -77,10 +70,9 @@ function GirlfriendsDay() {
           text-align: center;
           color: #333;
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-          transition: all 0.4s ease;
           animation: fadeIn 0.6s ease-in-out;
           position: relative;
-  z-index: 1;
+          z-index: 1;
         }
 
         .card img {
@@ -137,79 +129,81 @@ function GirlfriendsDay() {
           100% { transform: scale(1); opacity: 1; }
         }
 
+        .hearts-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          overflow: hidden;
+          z-index: 0;
+          opacity: 0;
+          transition: opacity 0.6s ease-in-out;
+        }
 
-.hearts-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-  display: none;
-}
+        .hearts-wrapper.active {
+          opacity: 1;
+        }
 
-.heart {
-  position: absolute;
-  top: -40px; /* start way above viewport */
-  width: 20px;
-  height: 20px;
-  background: #ff5e8e;
-  transform: rotate(45deg);
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  opacity: 0.8;
-}
+        .heart {
+          position: absolute;
+          top: -40px;
+          background: currentColor;
+          transform: rotate(45deg);
+          animation-name: fall;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          opacity: 0.8;
+          width: var(--size);
+          height: var(--size);
+        }
 
-.heart::before,
-.heart::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: 50%;
-}
+        .heart::before,
+        .heart::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: currentColor;
+          border-radius: 50%;
+        }
 
-.heart::before {
-  top: -50%;
-  left: 0;
-}
+        .heart::before {
+          top: -50%;
+          left: 0;
+        }
 
-.heart::after {
-  left: -50%;
-  top: 0;
-}
+        .heart::after {
+          left: -50%;
+          top: 0;
+        }
 
-@keyframes fall {
-  0% {
-    transform: translateY(-100px) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110vh) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-
+        @keyframes fall {
+          0% {
+            transform: translateY(-100px) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(110vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
       `}</style>
 
+      {/* Hearts */}
       <div className={`hearts-wrapper ${isLastPage ? 'active' : ''}`}>
         {[...Array(20)].map((_, i) => {
-          const size = 10 + Math.random() * 20; // 10px to 30px
-          const rotate = Math.random() * 360;
+          const size = 10 + Math.random() * 20; // 10–30px
+          const color = colors[Math.floor(Math.random() * colors.length)];
           return (
             <span
               key={i}
               className="heart"
               style={{
                 left: `${Math.random() * 100}%`,
-                width: `${size}px`,
-                height: `${size}px`,
-                transform: `rotate(${rotate}deg)`,
+                '--size': `${size}px`,
+                color,
                 animationDelay: `${Math.random() * 5}s`,
                 animationDuration: `${6 + Math.random() * 4}s`,
               }}
@@ -218,6 +212,7 @@ function GirlfriendsDay() {
         })}
       </div>
 
+      {/* Card */}
       <div className="card">
         <img src={pages[page].image} alt={`Slide ${page + 1}`} />
         <h2>{pages[page].title}</h2>
